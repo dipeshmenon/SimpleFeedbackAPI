@@ -5,7 +5,7 @@
 - Spring Data JPA
 - PostgreSQL
 - JUnit + Mockito
-- Tested using cURL and Postman
+- Tested using cURL, Postman and Insomnia
 
 ### How to run the project:
 1. Make sure PostgreSQL is installed and running
@@ -22,9 +22,15 @@ Submit feedback:
 
 - POST /feedback
 - Sample Request: `curl -X POST http://localhost:8080/feedback   -H "Content-Type: application/json"   -d '{"name": "ABC", "email": "abc.xyz@mail.com", "message": "Positive feedback"}'`
+- Insomnia and Postman: POST `http://localhost:8080/feedback` `{
+  "name": "ABC XYZ",
+  "email": "abc.xyz@mail.com",
+  "message": "Positive feedback"
+  }`
 ---
 - GET /feedback
 - Sample Request: `curl http://localhost:8080/feedback`
+- Insomnia and Postman: GET `http://localhost:8080/feedback`
  
 
 

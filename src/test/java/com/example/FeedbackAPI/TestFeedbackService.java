@@ -42,20 +42,4 @@ public class TestFeedbackService {
 
     }
 
-//@Test
-//public void invalidFeedback() {
-//
-//    Feedback feedback = new Feedback();
-//    feedback.setName("Ab");
-//    feedback.setEmail("ab@");
-//    feedback.setMessage("Test feedback.");
-//
-//
-//    assertThrows(ConstraintViolationException.class, () -> {
-//        feedbackService.saveFeedback(feedback);
-//    });
-//
-//
-//    verify(feedbackRepository, never()).save(any(Feedback.class));
-//}
 }

@@ -31,5 +31,8 @@ Submit feedback:
 ### Unit test case
 
 - To run the unit tests: `mvn test`
-- There are two unit test cases. One that tests the saving of the feedback and the other that tests for validation errors.
-- The first test (saveFeedbackTest) should succeed and the second test (invalidFeedback) should fail.
+- There are two unit test cases. 
+- The first test case tests the saving of the feedback.
+- The second test case tests if the entered feedback follows the validation rules. 
+- The rules are: name-required - minimum 3 characters, email-required - valid email format and feedback message-required - minimum 10 characters.
+- The first test (TestFeedbackService) should succeed and the second test (TestFeedbackInvalid) should fail.
